@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-function Button({isOutLine, icon, text}) {
+function Button({isOutLine, icon, text, ...rest}) {
   return (
-    <button className={isOutLine ? styles.outline_btn : styles.primary_btn}>
+    <button
+    {...rest}
+    className={isOutLine ? styles.outline_btn : styles.primary_btn}>
       {icon}
       {text}
     </button>
