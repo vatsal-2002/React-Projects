@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import styled from 'styled-components'
+import { Button } from '../styled/Button'
 
 const Container = styled.div`
     max-width: 1180px;
